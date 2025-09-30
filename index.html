@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfólio de Lucas Alexandre Vieira Schutz - Desenvolvedor em formação (Java, Python, Web, Arduino)">
+    <meta name="theme-color" content="#0b0f17">
+    <title>Lucas Schutz | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+      <div class="loader-core"></div>
+      <span class="loader-text">Carregando...</span>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo">
+      ↑
+    </button>
+
+    <!-- Header / Navegação fixa -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio" class="brand" aria-label="Lucas Schutz - início">Schutz Dev</a>
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryMenu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="primaryMenu" class="nav-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO / Início -->
+      <section id="inicio" class="section hero" aria-label="Seção de abertura">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero-content container">
+          <h1 class="hero-title">
+            <span class="typed" data-strings='["Transformando ideias em código.", "Desenvolvedor Full Stack em formação | Java • Python • Web • Arduino"]'></span>
+          </h1>
+          <p class="hero-sub">Tecnologia, inovação e criatividade em cada projeto.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projetos">Ver Projetos</a>
+            <a class="btn ghost" href="#contato">Entrar em Contato</a>
+          </div>
+        </div>
+        <div class="hero-gradient" aria-hidden="true"></div>
+      </section>
+
+      <!-- Sobre mim -->
+      <section id="sobre" class="section about container" aria-label="Sobre mim">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h2>Sobre mim</h2>
+            <p>
+              Olá! Eu sou o <strong>Lucas Alexandre Vieira Schutz</strong>, estudante de <strong>Ciência da Computação</strong> e
+              <strong>Análise e Desenvolvimento de Sistemas</strong>. Apaixonado por tecnologia, gosto de transformar ideias em soluções
+              práticas, com foco em <strong>Java</strong>, <strong>Python</strong>, <strong>Desenvolvimento Web</strong> e <strong>Arduino</strong>.
+            </p>
+            <p>
+              Estou em constante aprendizado, buscando criar experiências modernas, acessíveis e eficientes. Meu objetivo é construir
+              softwares que façam a diferença por meio de design, performance e boas práticas.
+            </p>
+            <ul class="about-highlights">
+              <li>Foco em clean code e arquitetura clara</li>
+              <li>Interesse por UI/UX e microinterações</li>
+              <li>Aprendizado contínuo e colaboração</li>
+            </ul>
+          </div>
+          <div class="about-media reveal">
+            <div class="avatar-frame">
+              <!-- Avatar inline SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Avatar estilizado de Lucas Schutz">
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#5b8cff"/>
+                    <stop offset="100%" stop-color="#7a5cff"/>
+                  </linearGradient>
+                  <radialGradient id="g2" cx="50%" cy="40%" r="60%">
+                    <stop offset="0%" stop-color="#00e6ff" stop-opacity=".9"/>
+                    <stop offset="100%" stop-color="#0e1528" stop-opacity="0"/>
+                  </radialGradient>
+                  <clipPath id="rounded">
+                    <rect x="10" y="10" width="180" height="180" rx="22" ry="22"/>
+                  </clipPath>
+                </defs>
+                <rect x="10" y="10" width="180" height="180" rx="22" ry="22" fill="#0f1628" stroke="#1a2540"/>
+                <g clip-path="url(#rounded)">
+                  <circle cx="140" cy="40" r="60" fill="url(#g2)"/>
+                  <g transform="translate(0, 8)">
+                    <circle cx="100" cy="76" r="32" fill="#17233b" stroke="#224"/>
+                    <circle cx="90" cy="72" r="4" fill="#9fb0c2"/>
+                    <circle cx="110" cy="72" r="4" fill="#9fb0c2"/>
+                    <rect x="86" y="88" width="28" height="6" rx="3" fill="#9fb0c2"/>
+                  </g>
+                  <g transform="translate(0, 0)">
+                    <path d="M58 148c10-18 28-28 42-28s32 10 42 28v14H58z" fill="#17233b" stroke="#224"/>
+                    <rect x="56" y="160" width="88" height="10" rx="5" fill="url(#g1)"/>
+                  </g>
+                  <g opacity="0.28">
+                    <circle cx="32" cy="36" r="2" fill="#5b8cff"/>
+                    <circle cx="170" cy="120" r="2" fill="#00e6ff"/>
+                    <circle cx="60" cy="168" r="2" fill="#7a5cff"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section id="habilidades" class="section skills" aria-label="Habilidades">
+        <div class="container">
+          <h2 class="center">Habilidades</h2>
+          <p class="center skills-sub">Tecnologias que utilizo para criar soluções robustas e modernas.</p>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#1a2540"/><path d="M12 30c10-2 12-6 4-8 12 0 18 6 0 10 10 2 24 2 24-6" stroke="#5b8cff" stroke-width="2" fill="none"/></svg>
+              <h3>Java</h3>
+              <div class="level"><span style="width: 85%"></span></div>
+            </article>
+            <article class="skill-card reveal">
+              <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#1a2540"/><path d="M12 20h20a6 6 0 016 6v2H18a6 6 0 01-6-6v-2z" fill="#3673a5"/><path d="M36 28H16a6 6 0 00-6 6v2h20a6 6 0 006-6v-2z" fill="#ffd43b"/></svg>
+              <h3>Python</h3>
+              <div class="level"><span style="width: 75%"></span></div>
+            </article>
+            <article class="skill-card reveal">
+              <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#1a2540"/><path d="M12 10h24l-2 24-10 4-10-4-2-24z" fill="#e44d26"/><path d="M24 12v22l8-3 1.6-17H24z" fill="#f16529"/></svg>
+              <h3>HTML5</h3>
+              <div class="level"><span style="width: 90%"></span></div>
+            </article>
+            <article class="skill-card reveal">
+              <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#1a2540"/><path d="M12 10h24l-2 24-10 4-10-4-2-24z" fill="#264de4"/><path d="M24 12v22l8-3 1.6-17H24z" fill="#2965f1"/></svg>
+              <h3>CSS3</h3>
+              <div class="level"><span style="width: 85%"></span></div>
+            </article>
+            <article class="skill-card reveal">
+              <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#1a2540"/><path d="M24 10c6 0 10 4 10 10s-4 10-10 10-10-4-10-10" fill="#f7df1e"/><text x="24" y="30" text-anchor="middle" font-size="14" font-family="Roboto Mono, monospace" fill="#111">JS</text></svg>
+              <h3>JavaScript</h3>
+              <div class="level"><span style="width: 80%"></span></div>
+            </article>
+            <article class="skill-card reveal">
+              <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#1a2540"/><circle cx="24" cy="24" r="10" stroke="#00e6ff" stroke-width="2" fill="none"/><rect x="22" y="10" width="4" height="6" fill="#00e6ff"/></svg>
+              <h3>Arduino</h3>
+              <div class="level"><span style="width: 70%"></span></div>
+            </article>
+            <article class="skill-card reveal">
+              <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#1a2540"/><rect x="10" y="14" width="28" height="20" rx="4" ry="4" fill="#3b82f6"/><circle cx="18" cy="24" r="3" fill="#0b0f17"/><rect x="24" y="22" width="10" height="4" rx="2" fill="#0b0f17"/></svg>
+              <h3>SQL / PostgreSQL</h3>
+              <div class="level"><span style="width: 75%"></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="section projects" aria-label="Projetos">
+        <div class="container">
+          <h2 class="center">Projetos</h2>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-media bg-1" aria-hidden="true"></div>
+              <div class="project-content">
+                <h3>Pickler Hamburgueria 🍔</h3>
+                <p>Website responsivo em HTML/CSS/JS com foco em UI e experiência do usuário.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="https://github.com/LucasSchutz" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media bg-2" aria-hidden="true"></div>
+              <div class="project-content">
+                <h3>Quiz da FMP 💡</h3>
+                <p>Tema dark tecnológico, timer e página de resultados, 100% em JS puro.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="https://github.com/LucasSchutz" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media bg-3" aria-hidden="true"></div>
+              <div class="project-content">
+                <h3>Jogo da Memória 🎮</h3>
+                <p>Jogo educativo com animações e feedback visual, pensado para escolas.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="https://github.com/LucasSchutz" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media bg-4" aria-hidden="true"></div>
+              <div class="project-content">
+                <h3>Jogo da Forca 🧩</h3>
+                <p>Implementado em Python com lógica de aleatoriedade e níveis de dificuldade.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="https://github.com/LucasSchutz" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media bg-5" aria-hidden="true"></div>
+              <div class="project-content">
+                <h3>Sistema com PostgreSQL 🗄️</h3>
+                <p>Modelagem e integração com banco de dados, CRUD e boas práticas de SQL.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="https://github.com/LucasSchutz" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="section contact" aria-label="Contato">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <h2>Contato</h2>
+            <p>Vamos conversar sobre tecnologia, ideias e projetos. Estou aberto a oportunidades.</p>
+            <ul class="socials">
+              <li>
+                <a href="https://github.com/LucasSchutz" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#e6edf3" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.19-3.37-1.19-.45-1.13-1.1-1.43-1.1-1.43-.9-.62.07-.6.07-.6 1 .07 1.52 1.04 1.52 1.04.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.37.21 2.39.11 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.69.93.69 1.88v2.79c0 .26.18.58.69.48A10 10 0 00112z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/lucas-schutz" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0a66c2" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.86 3.37-1.86 3.6 0 4.27 2.37 4.27 5.45v6.3zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:contato@lucasschutz.dev" aria-label="Email">
+                  <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#e6edf3" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5L4 8V6l8 5 8-5v2z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form reveal">
+            <form id="contactForm" novalidate>
+              <div class="form-field">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" placeholder="Seu nome" required>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+              </div>
+              <div class="form-field">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem" required></textarea>
+              </div>
+              <button type="submit" class="btn primary">Enviar</button>
+              <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+        <div class="contact-bg" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 - Desenvolvido por Lucas Schutz</p>
+        <a class="to-top" href="#inicio" aria-label="Voltar ao início">Topo</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
